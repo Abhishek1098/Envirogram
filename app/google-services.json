@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1080841205980",
+    "firebase_url": "https://envirogram-b23cf.firebaseio.com",
+    "project_id": "envirogram-b23cf",
+    "storage_bucket": "envirogram-b23cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080841205980:android:5c69c0694ee8c6c2",
+        "android_client_info": {
+          "package_name": "com.envirogram.sbhack.envirogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080841205980-tp42jdu338qm9jj52m9vj7kramjl22ts.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.envirogram.sbhack.envirogram",
+            "certificate_hash": "9c9ac10ea0e5589c1fd7fd527f7186fc9227409e"
+          }
+        },
+        {
+          "client_id": "1080841205980-2fkumrtc1p700a2lq0kdcn5elqhm915m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsguQjvgcwpSge3LjnA5gc8llJeNJYE3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080841205980-2fkumrtc1p700a2lq0kdcn5elqhm915m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
