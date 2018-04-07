@@ -335,7 +335,7 @@ public class LoginActivitySBHS extends AppCompatActivity implements LoaderCallba
                 }
             }
 
-
+            Log.d("makeUser","true");
             // TODO: register the new account here.
             firebaseAuth.createUserWithEmailAndPassword(mEmail, mPassword)
                     .addOnCompleteListener(LoginActivitySBHS.this, new OnCompleteListener<AuthResult>() {
@@ -365,7 +365,7 @@ public class LoginActivitySBHS extends AppCompatActivity implements LoaderCallba
             showProgress(false);
 
             if (success) {
-                finish();
+
                 Intent i = new Intent(LoginActivitySBHS.this , MainActivity.class );
                 startActivity(i);
 
