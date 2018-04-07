@@ -25,7 +25,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_login_sbhs"></activity>
+            android:label="@string/title_activity_login_sbhs" />
+        <activity android:name=".Camera"></activity>
     </application>
 
 </manifest>
