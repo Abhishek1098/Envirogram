@@ -38,11 +38,6 @@ public class FeedAdapter extends ArrayAdapter{
         TextView textViewUsername = adapterView.findViewById(R.id.id_listFeed_TextView_username);
         textViewUsername.setText(postArrayList.get(position).getUsername());
         textViewUsername.setTypeface(typeface);
-
-        TextView textViewCaption = adapterView.findViewById(R.id.id_listFeed_TextView_caption);
-        textViewCaption.setText(postArrayList.get(position).getCaption());
-        textViewCaption.setTypeface(typeface);
-
         return adapterView;
     }
 }
