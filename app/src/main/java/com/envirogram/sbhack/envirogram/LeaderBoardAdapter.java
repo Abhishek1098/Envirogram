@@ -28,7 +28,7 @@ public class LeaderBoardAdapter extends ArrayAdapter {
         View adapterView = layoutInflater.inflate(R.layout.layout_list_feed, null);
 
         ImageView imageView = adapterView.findViewById(R.id.id_listFeed_ImageView);
-        imageView.setImageResource(postArrayList.get(position).getImageViewResource());
+        imageView.setImageBitmap(postArrayList.get(position).getImageViewResource());
 
         TextView textViewUsername = adapterView.findViewById(R.id.id_listFeed_TextView_username);
         textViewUsername.setText(postArrayList.get(position).getUsername());

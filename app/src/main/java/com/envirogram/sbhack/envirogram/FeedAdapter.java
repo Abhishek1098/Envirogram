@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class FeedAdapter extends ArrayAdapter{
@@ -29,14 +30,18 @@ public class FeedAdapter extends ArrayAdapter{
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
         View adapterView = layoutInflater.inflate(R.layout.layout_list_feed, null);
 
+        Typeface typeface = Typeface.createFromAsset(context.getAssets(), "fonts/cool.ttf");
+
         ImageView imageView = adapterView.findViewById(R.id.id_listFeed_ImageView);
-        imageView.setImageResource(postArrayList.get(position).getImageViewResource());
+        imageView.setImageBitmap(postArrayList.get(position).getImageViewResource());
 
         TextView textViewUsername = adapterView.findViewById(R.id.id_listFeed_TextView_username);
         textViewUsername.setText(postArrayList.get(position).getUsername());
+        textViewUsername.setTypeface(typeface);
 
         TextView textViewCaption = adapterView.findViewById(R.id.id_listFeed_TextView_caption);
         textViewCaption.setText(postArrayList.get(position).getCaption());
+        textViewCaption.setTypeface(typeface);
 
         return adapterView;
     }

@@ -19,10 +19,4 @@
         android:layout_weight="1"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
-    <TextView
-        android:id="@+id/id_listFeed_TextView_caption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Caption" />
 </LinearLayout>

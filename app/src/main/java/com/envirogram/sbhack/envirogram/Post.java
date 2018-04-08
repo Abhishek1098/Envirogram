@@ -1,13 +1,16 @@
 package com.envirogram.sbhack.envirogram;
 
+import android.graphics.Bitmap;
+
 public class Post {
 
-    private int likeCount, imageViewResource;
+    private int likeCount;
+    private Bitmap bitmap;
     private String caption, username;
 
-    public Post(int likeCount, int imageViewResource, String caption, String username){
+    public Post(int likeCount, Bitmap bitmap, String caption, String username){
         this.likeCount=likeCount;
-        this.imageViewResource=imageViewResource;
+        this.bitmap=bitmap;
         this.caption=caption;
         this.username=username;
     }
@@ -16,8 +19,8 @@ public class Post {
         return likeCount;
     }
 
-    public int getImageViewResource(){
-        return imageViewResource;
+    public Bitmap getImageViewResource(){
+        return bitmap;
     }
 
     public String getCaption(){
