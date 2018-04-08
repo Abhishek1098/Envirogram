@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.id_NavigationView_feed:
                         setViewFeed();
-                        break;
+                        return true;
                     case R.id.id_NavigationView_leaderboard:
                         setViewLeaderBoard();
-                        break;
+                        return true;
                     case R.id.id_NavigationView_profile:
                         setViewProfile();
-                        break;
+                        return true;
                 }
                 return false;
             }
@@ -42,13 +42,19 @@ public class MainActivity extends AppCompatActivity {
     public void setViewFeed(){
         listViewMain = findViewById(R.id.id_main_ListView);
         ArrayList<Post> postArrayList = new ArrayList<>();
-        //POPULATE THIS ARRAY LIST
+        //POPULATE THIS ARRAY LIST with posts
+        //postArrayList.add(new Post(likeCount, int imageviewresource, caption, username));
         FeedAdapter feedAdapter = new FeedAdapter(this, R.layout.layout_list_feed, postArrayList);
         listViewMain.setAdapter(feedAdapter);
     }
 
     public void setViewLeaderBoard(){
         listViewMain = findViewById(R.id.id_main_ListView);
+        ArrayList<User> userArrayList = new ArrayList<>();
+        //POPULATE THIS ARRAY with users
+        //userArrayList.add(new User(username))
+        UserAdapter userAdapter = new UserAdapter(this, R.layout.layout_user, userArrayList);
+        listViewMain.setAdapter(userAdapter);
     }
 
     public void setViewProfile(){
