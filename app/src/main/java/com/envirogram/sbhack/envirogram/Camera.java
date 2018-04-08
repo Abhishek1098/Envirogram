@@ -40,5 +40,9 @@ public class Camera extends AppCompatActivity {
         Bitmap bitmap=(Bitmap)data.getExtras().get("data");
         picture.setImageBitmap(bitmap);
 
+
+
+        finish();
+
     }
 }

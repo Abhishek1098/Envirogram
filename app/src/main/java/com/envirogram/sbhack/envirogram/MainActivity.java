@@ -1,5 +1,6 @@
 package com.envirogram.sbhack.envirogram;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.id_NavigationView_profile:
                         setViewProfile();
                         return true;
+                    case R.id.id_NavigationView_camera:
+                        Intent intent = new Intent(MainActivity.this, Camera.class);
+                        startActivityForResult(intent, 0);
+                        return true;
+
                 }
                 return false;
             }
@@ -59,4 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }
