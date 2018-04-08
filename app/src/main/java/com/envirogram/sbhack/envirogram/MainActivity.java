@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.id_NavigationView_camera:
                         Intent intent = new Intent(MainActivity.this, Camera.class);
-                        startActivityForResult(intent, 0);
+                        startActivity(intent);
                         return true;
 
                 }
